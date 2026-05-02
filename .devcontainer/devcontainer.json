@@ -1,0 +1,5 @@
+{
+  "name": "OMICS Course Environment",
+  "image": "mcr.microsoft.com/devcontainers/miniconda:latest",
+  "postCreateCommand": "conda create -n omics_course -c conda-forge -c bioconda fastqc seqkit samtools -y"
+}
