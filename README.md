@@ -19,6 +19,14 @@ Bu repository GitHub Codespaces üzerinde çalıştırılmak üzere hazırlanmı
 Herhangi bir kurulum gerekmez; tüm analizler tarayıcı üzerinden yapılır.
 
 ---
+## Kurulum
+
+conda create -n omics_course -y
+conda activate omics_course
+
+conda install -c conda-forge -c bioconda fastqc subread -y
+conda install -c conda-forge r-base r-essentials -y
+---
 
 ## Nasıl Çalıştırılır?
 
