@@ -21,11 +21,59 @@ Herhangi bir kurulum gerekmez; tüm analizler tarayıcı üzerinden yapılır.
 ---
 ## Kurulum
 
+# 🧬 OMICS Course – Mini RNA-seq Workflow
+
+Bu repository, “OMICS Teknolojilerine Giriş: Transkriptomik & Metagenomik” kursu kapsamında **Linux, Conda ve temel RNA-seq analiz adımlarını uygulamalı olarak öğretmek** amacıyla hazırlanmıştır.
+
+Bu mini workflow ile katılımcılar küçük bir veri seti üzerinde aşağıdaki RNA-seq analiz adımlarını çalıştıracaktır:
+
+- FASTQ kalite kontrolü (FastQC)
+- Referans genom index oluşturma (Subread)
+- Read hizalama (alignment)
+- Gen bazlı count matrisi oluşturma (featureCounts)
+
+---
+
+# Amaç
+
+Bu repository’nin amacı:
+
+- Terminal kullanımını öğretmek  
+- Conda environment mantığını göstermek  
+- Biyoinformatik pipeline nasıl çalışır onu anlatmak  
+- HPC mantığına giriş sağlamak  
+
+---
+
+# Eğitim Akışı
+
+FASTQ → QC → Index → Alignment → Count
+
+---
+
+# Kurulum 
+
+Codespaces ortamında conda otomatik aktif gelmez.  
+Bu nedenle aşağıdaki adımlar **zorunludur**:
+
+```bash
+# conda'yı shell'e bağla (çok önemli!)
+source /opt/conda/etc/profile.d/conda.sh
+
+# environment oluştur
 conda create -n omics_course -y
+
+# environment aktif et
 conda activate omics_course
 
+# gerekli tool'ları kur
 conda install -c conda-forge -c bioconda fastqc subread -y
 conda install -c conda-forge r-base r-essentials -y
+
+# Kurulum Kontrolü
+which fastqc
+which subread-align
+which Rscript
 ---
 
 ## Nasıl Çalıştırılır?
