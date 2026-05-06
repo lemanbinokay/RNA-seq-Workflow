@@ -1,0 +1,5 @@
+chrMini	mini	exon	51	144	.	+	.	gene_id "geneA"; gene_name "geneA";
+chrMini	mini	exon	195	286	.	+	.	gene_id "geneB"; gene_name "geneB";
+chrMini	mini	exon	337	426	.	+	.	gene_id "geneC"; gene_name "geneC";
+chrMini	mini	exon	477	562	.	+	.	gene_id "geneD"; gene_name "geneD";
+chrMini	mini	exon	613	700	.	+	.	gene_id "geneE"; gene_name "geneE";
